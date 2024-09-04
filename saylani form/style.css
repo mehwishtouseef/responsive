@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 45%;
+    color: plum;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+    height: 700px;
+    width: 85%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 10px 10px 10px plum, -10px -10px 10px plum;
+    padding-top: 30px;
+}
+
+.logo {
+    height: 15%;
+    width: 15%;
+}
+
+nav {
+    background-color: black;
+    /* Optional: Adds a background to the nav */
+    padding: 10px 30px;
+    width: 87%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a shadow to the nav */
+    position: relative;
+    /* Keeps the nav inside the box */
+    top: 0;
+    /* Ensures the nav stays at the top inside the box */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Vertically centers the content */
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    /* Aligns the logo and text vertically */
+}
+
+.brand-container img {
+    margin-right: 0px;
+    /* Adds space between the logo and the text */
+}
+
+.girly {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns the list to the right */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    list-style-type: none;
+    margin: 0 15px;
+    font-size: medium;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+button {
+    border-radius: 20px;
+    height: 40px;
+    width: 50%;
+    background-color: plum;
+    color: black;
+    font-size: larger;
+    margin-top: 50px;
+}
+
+.img {
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-left: 80px;
+    height: 70%;
+    width: 70%;
+}
+
+.h1 {
+    margin-top: 80px;
+}
+
+.h2 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: medium;
+
+}
+
+hr {
+    width: 50%;
+}
+
+.gap {
+    line-height: 2;
+}
+
+
+@media (max-width: 670) {
+    .img {
+        margin-left: 90px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    body {
+        width: 95%;
+        height: 100px; 
+        margin: auto;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        /* Center the content */
+    }
+
+    .main>div {
+        width: 100%;
+        /* Make the divs take full width */
+        text-align: center;
+        /* Center the text inside the divs */
+    }
+
+    .img {
+        margin-top: 0px;
+        width: 30%;
+        margin-left: 125px;
+        height: 10%;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    button {
+        width: 30%;
+        margin-top: 10px;
+    }
+
+    hr {
+        width: 100%;
+        /* Adjust hr width */
+    }
+
+    body {
+        height: 1000px;
+        width: 85%;
+    }
+
+    .nav-links ul li {
+        margin-top: 20px;
+        font-size: small;
+
+    }
+
+    .logo {
+        height: 10%;
+        width: 10%;
+    }
+
+    .h1 {
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 10px 30px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px)
+{
+    .nav-links ul {
+        display: none;
+    }
+    .logo {
+        height: 10%;
+        width: 20%;
+        margin-left: 40px;
+    }
+    .girly{
+        margin-left: 10px;
+    }
+    button{
+        width: 70%;
+    }
+    p{
+        font-size: 14px;
+    }
+    hr{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .nav-links ul {
+        display: none;
+    }
+
+    nav {
+        padding: 10px 30px;
+        width: 70%;
+    }
+
+    .logo {
+        height: 10%;
+        width: 20%;
+        margin-left: 40px;
+    }
+    .girly{
+        margin-left: 10px;
+    }
+    .img{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+body {
+    height: 600px;
+}
+}
